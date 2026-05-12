@@ -65,7 +65,7 @@ export default function Home() {
             </div>
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden gold-border">
-            <Image src="/steak.png" alt="Premium Grill" fill className="object-cover" />
+            <Image src="/steak.png" alt="Premium Grill" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
           </div>
         </div>
       </Section>
@@ -122,7 +122,7 @@ export default function Home() {
               </ul>
             </div>
             <div className="h-[400px] relative">
-              <Image src="/ext_close.jpg" alt="Location Exterior" fill className="object-cover" />
+              <Image src="/ext_close.jpg" alt="Location Exterior" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
               <div className="absolute inset-0 bg-gold/5 mix-blend-overlay" />
             </div>
           </div>

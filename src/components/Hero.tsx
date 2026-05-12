@@ -16,6 +16,7 @@ export default function Hero() {
           alt="BlackWoods Luxury Bar"
           fill
           className="object-cover opacity-60"
+          sizes="100vw"
           priority
         />
       </div>
