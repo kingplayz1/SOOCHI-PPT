@@ -8,6 +8,7 @@ const navItems = [
   { name: "Executive Summary", href: "#executive-summary" },
   { name: "Team", href: "#team" },
   { name: "Location", href: "#location" },
+  { name: "Menu", href: "/menu" },
   { name: "Operations", href: "#operations" },
   { name: "Management", href: "#management" },
   { name: "Market", href: "#market" },

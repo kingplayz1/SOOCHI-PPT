@@ -26,10 +26,10 @@ const financialData = [
 ];
 
 const marketShare = [
-  { name: 'Dining', value: 45 },
+  { name: 'Dining & Drinks', value: 45 },
   { name: 'Nightlife', value: 30 },
-  { name: 'Events', value: 15 },
-  { name: 'VIP', value: 10 },
+  { name: 'VIP', value: 15 },
+  { name: 'Events', value: 10 },
 ];
 
 export default function Home() {
@@ -65,7 +65,7 @@ export default function Home() {
             </div>
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden gold-border">
-            <Image src="/steak.png" alt="Premium Grill" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+            <Image src="/cocktail.png" alt="Signature Drinks" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
           </div>
         </div>
       </Section>
@@ -74,18 +74,30 @@ export default function Home() {
       <Section id="team" title="Leadership" subtitle="The Excellence Behind The Brand" className="bg-luxury-gray/30">
         <div className="grid md:grid-cols-4 gap-8">
           {[
-            { name: "Duffii Marcos", role: "Owner & Primary Investor", bio: "Leadership & Brand Vision" },
-            { name: "Tejas Joshi", role: "Co-Owner", bio: "Operations & Event Management" },
-            { name: "Kai Gill", role: "Manager", bio: "Daily Operations & Inventory" },
-            { name: "Gopal Haldar", role: "Head Chef", bio: "Menu & Food Quality Control" },
+            { name: "Duffii Marcos", role: "Owner & Primary Investor", bio: "Leadership & Brand Vision", img: "/team_owner.jpg" },
+            { name: "Tejas Joshi", role: "Co-Owner", bio: "Operations & Event Management", img: "/team_coowner.jpg" },
+            { name: "Kai Gill", role: "Manager", bio: "Daily Operations & Inventory", img: "/team_manager.jpg" },
+            { name: "Gopal Haldar", role: "Head Chef", bio: "Menu & Food Quality Control", img: "/team_chef.jpg" },
           ].map((member, i) => (
             <motion.div 
               key={i}
               whileHover={{ y: -10 }}
               className="glass-card p-8 text-center group transition-all duration-300 hover:border-gold/50"
             >
-              <div className="w-20 h-20 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-gold/20 transition-colors">
-                <Users className="text-gold w-8 h-8" />
+              <div className="w-32 h-40 relative mx-auto mb-6 overflow-hidden rounded-lg border-2 border-gold/20 shadow-2xl group-hover:border-gold/50 transition-all duration-500 bg-black">
+                <Image 
+                  src={member.img} 
+                  alt={member.name} 
+                  fill 
+                  className="object-cover object-top"
+                  sizes="128px"
+                  onError={(e) => {
+                    (e.target as any).style.display = 'none';
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-4">
+                  <Users className="text-gold w-5 h-5" />
+                </div>
               </div>
               <h3 className="text-xl font-cinzel font-bold text-gold mb-1">{member.name}</h3>
               <p className="text-sm text-gray-400 uppercase tracking-widest mb-4">{member.role}</p>
@@ -342,7 +354,7 @@ export default function Home() {
       </Section>
 
       <footer className="py-12 border-t border-gold/10 text-center text-gray-500 text-sm tracking-widest uppercase">
-        &copy; 2026 BlackWoods Bar & Grill | Duffii Marcos Group
+        &copy; 2026 BlackWoods Bar & Grill | Duffii Marcos corps
       </footer>
     </main>
   );
