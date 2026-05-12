@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #D4AF37;
+  --color-gold-light: #F9E498;
+  --color-gold-dark: #9A7B2C;
+  --color-luxury-black: #080705;
+  --color-luxury-gray: #1a1814;
+  --color-neon-red: #ff3131;
+  
+  --font-cinzel: "Cinzel", serif;
+  --font-poppins: "Poppins", sans-serif;
+
+  --animate-gold-glow: gold-glow 2s ease-in-out infinite alternate;
+  --animate-neon-flicker: neon-flicker 1.5s infinite alternate;
+}
+
+@keyframes neon-flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px var(--color-neon-red), 0 0 80px var(--color-neon-red);
+  }
+  20%, 22%, 24%, 55% {
+    text-shadow: none;
+  }
+}
+
+@keyframes gold-glow {
+  from {
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.8), 0 0 30px rgba(212, 175, 55, 0.4);
+  }
+}
+
+:root {
+  --background: #050505;
+  --foreground: #ffffff;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-poppins);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-cinzel);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(to right, #D4AF37, #F9E498, #9A7B2C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border {
+  border: 1px solid transparent;
+  background: linear-gradient(var(--background), var(--background)) padding-box,
+              linear-gradient(to right, #D4AF37, #9A7B2C) border-box;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9A7B2C;
+}
