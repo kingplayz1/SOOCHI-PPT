@@ -5,14 +5,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
-  { name: "Executive Summary", href: "#executive-summary" },
-  { name: "Team", href: "#team" },
-  { name: "Location", href: "#location" },
+  { name: "Executive Summary", href: "/#executive-summary" },
+  { name: "Team", href: "/#team" },
+  { name: "Location", href: "/#location" },
   { name: "Menu", href: "/menu" },
-  { name: "Operations", href: "#operations" },
-  { name: "Management", href: "#management" },
-  { name: "Market", href: "#market" },
-  { name: "Financials", href: "#financials" },
+  { name: "Operations", href: "/#operations" },
+  { name: "Management", href: "/#management" },
+  { name: "Market", href: "/#market" },
+  { name: "Financials", href: "/#financials" },
 ];
 
 export default function Navbar() {

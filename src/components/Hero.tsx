@@ -39,13 +39,14 @@ export default function Hero() {
             A Cinematic Business Proposal for the Future of Luxury Hospitality.
           </p>
           
-          <motion.button
+          <motion.a
+            href="#executive-summary"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-10 py-4 bg-transparent border-2 border-gold text-gold hover:bg-gold hover:text-luxury-black transition-all duration-300 font-bold uppercase tracking-widest text-sm"
+            className="inline-block px-10 py-4 bg-transparent border-2 border-gold text-gold hover:bg-gold hover:text-luxury-black transition-all duration-300 font-bold uppercase tracking-widest text-sm"
           >
             Explore Vision
-          </motion.button>
+          </motion.a>
         </motion.div>
       </div>
 

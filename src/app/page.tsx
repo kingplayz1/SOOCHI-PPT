@@ -84,13 +84,13 @@ export default function Home() {
               whileHover={{ y: -10 }}
               className="glass-card p-8 text-center group transition-all duration-300 hover:border-gold/50"
             >
-              <div className="w-32 h-40 relative mx-auto mb-6 overflow-hidden rounded-lg border-2 border-gold/20 shadow-2xl group-hover:border-gold/50 transition-all duration-500 bg-black">
+              <div className="w-40 h-48 relative mx-auto mb-6 overflow-hidden rounded-lg border-2 border-gold/20 shadow-2xl group-hover:border-gold/50 transition-all duration-500 bg-black">
                 <Image 
                   src={member.img} 
                   alt={member.name} 
                   fill 
-                  className="object-cover object-top"
-                  sizes="128px"
+                  className="object-cover object-top transition-transform duration-500 group-hover:scale-110"
+                  sizes="256px"
                   onError={(e) => {
                     (e.target as any).style.display = 'none';
                   }}

@@ -160,8 +160,6 @@ export default function MenuPage() {
                       >
                         <div className="flex justify-between items-baseline mb-2">
                           <h3 className="text-xl font-cinzel font-bold group-hover:text-gold transition-colors">{item.name}</h3>
-                          <div className="flex-1 mx-4 border-b border-gold/20 border-dotted" />
-                          <span className="text-gold font-bold">{item.price}</span>
                         </div>
                         <p className="text-gray-500 text-sm italic font-poppins">{item.desc}</p>
                       </motion.div>
@@ -189,9 +187,8 @@ export default function MenuPage() {
             >
               {drinksMenu.map((drink, idx) => (
                 <div key={idx} className="glass-card p-8 border-l-4 border-l-gold group hover:bg-gold/5 transition-all">
-                  <div className="flex justify-between items-baseline mb-4">
+                  <div className="flex justify-start items-baseline mb-4">
                     <h3 className="text-2xl font-cinzel font-bold text-white group-hover:text-gold transition-colors">{drink.name}</h3>
-                    <span className="text-gold font-bold">{drink.price}</span>
                   </div>
                   <p className="text-gray-400 text-sm leading-relaxed">{drink.desc}</p>
                   <div className="mt-4 flex items-center text-gold/30 group-hover:text-gold transition-colors">
