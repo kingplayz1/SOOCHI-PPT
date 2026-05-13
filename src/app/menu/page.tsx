@@ -11,7 +11,7 @@ const foodMenu = [
   {
     category: "Pasta",
     description: "Al dente perfection with house-made sauces.",
-    image: "/steak.png", // Using steak as a placeholder for food
+    image: "/Pasta.png", // Using steak as a placeholder for food
     items: [
       { name: "Red Sauce Pasta", price: "$18", desc: "Tangy tomato base with fresh basil and herbs." },
       { name: "White Sauce Pasta", price: "$20", desc: "Creamy béchamel with parmesan and black pepper." },
@@ -21,7 +21,7 @@ const foodMenu = [
   {
     category: "Wraps",
     description: "Hand-rolled luxury in every bite.",
-    image: "/hero.png",
+    image: "/Wraps.png",
     items: [
       { name: "Mexican Paneer Wrap", price: "$16", desc: "Spiced paneer with salsa and crunchy veggies." },
       { name: "Veg Kabab Wrap", price: "$15", desc: "Traditional seekh kabab with mint chutney." },
@@ -31,7 +31,7 @@ const foodMenu = [
   {
     category: "Sandwiches",
     description: "Toasted to perfection with premium fillings.",
-    image: "/interior_wide.jpg",
+    image: "/Sandwiches.png",
     items: [
       { name: "Potato Sandwich", price: "$12", desc: "Spiced mash with green chutney." },
       { name: "Cheese Corn Sandwich", price: "$14", desc: "Sweet corn and melty cheddar." },
@@ -43,7 +43,7 @@ const foodMenu = [
   {
     category: "Burgers",
     description: "Gourmet patties on toasted brioche buns.",
-    image: "/ext_close.jpg",
+    image: "/Burgers.png",
     items: [
       { name: "Veg Burger", price: "$14", desc: "Crispy veg patty with house sauce." },
       { name: "Double Dekker Veg Burger", price: "$18", desc: "Two patties, extra cheese, extra luxury." },
@@ -55,7 +55,7 @@ const foodMenu = [
   {
     category: "Mains",
     description: "Hearty signature plates for the elite.",
-    image: "/steak.png",
+    image: "/Mains.png",
     items: [
       { name: "Chicken Gravy Bowl", price: "$22", desc: "Slow-cooked chicken in aromatic gravy." },
       { name: "Chicken Steak", price: "$28", desc: "Tenderized breast with mushroom sauce." },
@@ -81,7 +81,9 @@ const drinksMenu = [
   { name: "Moscow Mule", price: "$14", desc: "Vodka, ginger beer, lime." },
   { name: "Penicillin", price: "$16", desc: "Scotch, ginger, honey, lemon, Islay float." },
   { name: "Dark 'n' Stormy", price: "$14", desc: "Gosling's Black Seal Rum, ginger beer." },
-  { name: "Corpse Reviver", price: "$15", desc: "Gin, Lillet Blanc, Cointreau, Absinthe." }
+  { name: "Corpse Reviver", price: "$15", desc: "Gin, Lillet Blanc, Cointreau, Absinthe." },
+  { name: "Espresso shot", price: "$5", desc: "Rich, bold espresso shot." },
+  { name: "Irish coffee", price: "$12", desc: "Irish whiskey, hot coffee, cream." },
 ];
 
 export default function MenuPage() {
