@@ -204,7 +204,7 @@ export default function Home() {
                 "Customer service handling",
                 "Reservation management",
                 "Inventory and supply monitoring",
-                "Staff coordination and scheduling",
+                "Staff coordination and scheduling.",
               ].map((op, i) => (
                 <div key={i} className="flex items-center space-x-3 text-gray-400">
                   <div className="w-1.5 h-1.5 bg-gold rounded-full" />
