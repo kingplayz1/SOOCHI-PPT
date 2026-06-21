@@ -63,7 +63,7 @@ export default function Home() {
             </div>
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden gold-border">
-            <Image src="/cocktail.png" alt="Signature Drinks" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+            <Image src="/ramen.png" alt="Soochi Ramen" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
           </div>
         </div>
       </Section>
@@ -199,12 +199,12 @@ export default function Home() {
             <h3 className="text-2xl font-cinzel font-bold">Daily Workflows</h3>
             <div className="space-y-4">
               {[
-                "Food preparation and quality checks",
-                "Bar management and beverage services",
-                "Customer service handling",
-                "Reservation management",
-                "Inventory and supply monitoring",
-                "Staff coordination and scheduling.",
+                "Fresh sushi & sashimi preparation with daily ingredient checks",
+                "Sake and beverage bar management & service",
+                "Waterfront table reservations & guest experience management",
+                "Strict seafood cold-chain and hygiene compliance",
+                "Inventory of fresh seafood, produce, and Japanese imports",
+                "Kitchen and front-of-house staff coordination & scheduling",
               ].map((op, i) => (
                 <div key={i} className="flex items-center space-x-3 text-gray-400">
                   <div className="w-1.5 h-1.5 bg-gold rounded-full" />
@@ -218,15 +218,19 @@ export default function Home() {
             <ul className="space-y-4">
               <li className="flex items-center space-x-3">
                 <Briefcase className="text-gold w-5 h-5" />
-                <span className="text-gray-300">Experienced management team</span>
+                <span className="text-gray-300">Experienced restaurant management team with seafood expertise</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Utensils className="text-gold w-5 h-5" />
-                <span className="text-gray-300">Skilled kitchen staff</span>
+                <span className="text-gray-300">Skilled Japanese cuisine chefs and sushi masters</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Star className="text-gold w-5 h-5" />
-                <span className="text-gray-300">Premium atmosphere and interior design</span>
+                <span className="text-gray-300">Unique waterfront location on Del Perro Pier</span>
+              </li>
+              <li className="flex items-center space-x-3">
+                <MapPin className="text-gold w-5 h-5" />
+                <span className="text-gray-300">High foot traffic from pier tourism and sea-view dining demand</span>
               </li>
             </ul>
           </div>
@@ -274,9 +278,9 @@ export default function Home() {
         <div className="space-y-12">
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { label: "Initial Investment", value: 450, prefix: "$", suffix: "K+", icon: Briefcase },
+              { label: "Initial Investment", value: 1.2, prefix: "$", suffix: "M", icon: Briefcase },
               { label: "Stability Target", value: 12, prefix: "Month ", suffix: "", icon: ShieldCheck },
-              { label: "Revenue Target", value: 25, prefix: "$", suffix: "M+", icon: DollarSign },
+              { label: "Revenue Target", value: 30, prefix: "$", suffix: "M+", icon: DollarSign },
             ].map((stat, i) => (
               <div key={i} className="glass-card p-8 border-b-2 border-b-gold flex flex-col items-center">
                 <stat.icon className="text-gold w-8 h-8 mb-4" />
