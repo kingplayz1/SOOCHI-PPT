@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
-  { name: "Executive Summary", href: "/#executive-summary" },
+  { name: "Introduction", href: "/#executive-summary" },
   { name: "Team", href: "/#team" },
   { name: "Location", href: "/#location" },
   { name: "Menu", href: "/menu" },
@@ -35,9 +35,9 @@ export default function Navbar() {
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="text-2xl font-cinzel font-bold tracking-widest text-gold"
+          className="text-2xl font-cinzel font-bold tracking-widest text-gold animate-gold-glow"
         >
-          BLACKWOODS
+          SOOCHI
         </motion.div>
 
         {/* Desktop Menu */}
