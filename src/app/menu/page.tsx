@@ -9,81 +9,75 @@ import Image from "next/image";
 
 const foodMenu = [
   {
-    category: "Pasta",
-    description: "Al dente perfection with house-made sauces.",
-    image: "/Pasta.png", // Using steak as a placeholder for food
+    category: "Sushi & Sashimi",
+    description: "Fresh, premium cuts flown in daily.",
+    image: "/maguro-tuna-sushi.png", // Keeping existing image paths as requested
     items: [
-      { name: "Red Sauce Pasta", price: "$18", desc: "Tangy tomato base with fresh basil and herbs." },
-      { name: "White Sauce Pasta", price: "$20", desc: "Creamy béchamel with parmesan and black pepper." },
-      { name: "Brown Sauce Pasta", price: "$22", desc: "Savory demi-glace with roasted mushrooms." },
+      { name: "Maguro (Tuna) Nigiri", price: "$12", desc: "Two pieces of premium bluefin tuna over vinegared rice." },
+      { name: "Sake (Salmon) Sashimi", price: "$16", desc: "Five thick slices of fatty Atlantic salmon." },
+      { name: "Omakase Platter", price: "$45", desc: "Chef's selection of 12 premium seasonal pieces." },
     ]
   },
   {
-    category: "Wraps",
-    description: "Hand-rolled luxury in every bite.",
-    image: "/Wraps.png",
+    category: "Signature Rolls",
+    description: "Creative Maki crafted with precision.",
+    image: "/Dragon-Roll-1-scaled.png",
     items: [
-      { name: "Mexican Paneer Wrap", price: "$16", desc: "Spiced paneer with salsa and crunchy veggies." },
-      { name: "Veg Kabab Wrap", price: "$15", desc: "Traditional seekh kabab with mint chutney." },
-      { name: "Chicken Grill Wrap", price: "$18", desc: "Succulent grilled chicken with garlic aioli." },
+      { name: "Dragon Roll", price: "$18", desc: "Eel and cucumber topped with avocado and sweet tare sauce." },
+      { name: "Spicy Tuna Crunch", price: "$15", desc: "Spicy minced tuna, tempura flakes, and spicy mayo." },
+      { name: "Soochi Ocean Roll", price: "$22", desc: "Lobster tempura topped with seared scallop and black truffle." },
     ]
   },
   {
-    category: "Sandwiches",
-    description: "Toasted to perfection with premium fillings.",
-    image: "/Sandwiches.png",
+    category: "Appetizers",
+    description: "Perfect beginnings to your waterfront meal.",
+    image: "/Miso Soup.png",
     items: [
-      { name: "Potato Sandwich", price: "$12", desc: "Spiced mash with green chutney." },
-      { name: "Cheese Corn Sandwich", price: "$14", desc: "Sweet corn and melty cheddar." },
-      { name: "Korma Sandwich", price: "$16", desc: "Rich korma gravy with paneer cubes." },
-      { name: "Chicken Sandwich", price: "$18", desc: "Classic shredded chicken with mayo." },
-      { name: "Chicken Grill Sandwich", price: "$20", desc: "Triple-decker with grilled breast and veggies." },
+      { name: "Edamame", price: "$8", desc: "Steamed soybeans with Himalayan pink sea salt." },
+      { name: "Shrimp Tempura", price: "$14", desc: "Five pieces of lightly battered tiger shrimp with tentsuyu dip." },
+      { name: "Pork Gyoza", price: "$10", desc: "Pan-fried dumplings served with a soy-vinegar dipping sauce." },
+      { name: "Miso Soup", price: "$6", desc: "Traditional broth with tofu, wakame, and scallions." },
+      { name: "Agedashi Tofu", price: "$9", desc: "Deep-fried tofu in a savory dashi broth." },
     ]
   },
   {
-    category: "Burgers",
-    description: "Gourmet patties on toasted brioche buns.",
-    image: "/Burgers.png",
+    category: "Hot Mains",
+    description: "Hearty Japanese classics from the kitchen.",
+    image: "/Tonkotsu_ramen.png",
     items: [
-      { name: "Veg Burger", price: "$14", desc: "Crispy veg patty with house sauce." },
-      { name: "Double Dekker Veg Burger", price: "$18", desc: "Two patties, extra cheese, extra luxury." },
-      { name: "Chicken Burger", price: "$18", desc: "Flame-grilled chicken with lettuce and tomato." },
-      { name: "Chicken Cheese Burger", price: "$20", desc: "Gooey molten cheese center." },
-      { name: "Double Dekker Chicken Burger", price: "$24", desc: "The ultimate hunger killer." },
+      { name: "Chicken Teriyaki", price: "$24", desc: "Grilled chicken breast glazed in house-made teriyaki sauce." },
+      { name: "Miso Black Cod", price: "$32", desc: "Alaskan black cod marinated in sweet Saikyo miso." },
+      { name: "Tonkotsu Ramen", price: "$18", desc: "Rich pork bone broth, chashu, soft boiled egg, and wood ear mushrooms." },
+      { name: "Wagyu Beef Donburi", price: "$35", desc: "A5 Wagyu slices over rice with an onsen egg." },
+      { name: "Vegetable Udon", price: "$16", desc: "Thick wheat noodles in a light broth with seasonal vegetables." },
     ]
   },
   {
-    category: "Mains",
-    description: "Hearty signature plates for the elite.",
-    image: "/Mains.png",
+    category: "Desserts",
+    description: "Sweet finishes to your dining experience.",
+    image: "/Yuzu Cheesecake.png",
     items: [
-      { name: "Chicken Gravy Bowl", price: "$22", desc: "Slow-cooked chicken in aromatic gravy." },
-      { name: "Chicken Steak", price: "$28", desc: "Tenderized breast with mushroom sauce." },
-      { name: "Chicken Barbeque", price: "$26", desc: "Smoky BBQ glaze with grilled sides." },
-      { name: "Vegetable Gravy Bowl with Nachos", price: "$20", desc: "Fusion comfort food at its best." },
+      { name: "Matcha Mille Crepe", price: "$12", desc: "Layers of delicate crepes with green tea cream." },
+      { name: "Mochi Ice Cream", price: "$8", desc: "Three assorted flavors of ice cream wrapped in sweet rice dough." },
+      { name: "Yuzu Cheesecake", price: "$10", desc: "Light cheesecake infused with Japanese citrus." },
+      { name: "Black Sesame Ice Cream", price: "$7", desc: "House-made rich and nutty ice cream." },
     ]
   }
 ];
 
 const drinksMenu = [
-  { name: "Old Fashioned", price: "$14", desc: "Bourbon, sugar, bitters, citrus." },
-  { name: "Negroni", price: "$15", desc: "Gin, Campari, Sweet Vermouth." },
-  { name: "Daiquiri", price: "$13", desc: "White Rum, lime, simple syrup." },
-  { name: "Dry Martini", price: "$16", desc: "Gin or Vodka, Dry Vermouth, olive." },
-  { name: "Margarita", price: "$14", desc: "Tequila, Cointreau, lime juice." },
-  { name: "Espresso Martini", price: "$16", desc: "Vodka, Espresso, Kahlua." },
-  { name: "Whiskey Sour", price: "$15", desc: "Bourbon, lemon, egg white, bitters." },
-  { name: "Manhattan", price: "$15", desc: "Rye Whiskey, Vermouth, Angostura." },
-  { name: "Aperol Spritz", price: "$12", desc: "Aperol, Prosecco, soda, orange." },
-  { name: "Mojito", price: "$13", desc: "White Rum, mint, lime, soda." },
-  { name: "Bloody Mary", price: "$14", desc: "Vodka, tomato juice, spices." },
-  { name: "Gimlet", price: "$13", desc: "Gin, lime cordial, fresh lime." },
-  { name: "Moscow Mule", price: "$14", desc: "Vodka, ginger beer, lime." },
-  { name: "Penicillin", price: "$16", desc: "Scotch, ginger, honey, lemon, Islay float." },
-  { name: "Dark 'n' Stormy", price: "$14", desc: "Gosling's Black Seal Rum, ginger beer." },
-  { name: "Corpse Reviver", price: "$15", desc: "Gin, Lillet Blanc, Cointreau, Absinthe." },
-  { name: "Espresso shot", price: "$5", desc: "Rich, bold espresso shot." },
-  { name: "Irish coffee", price: "$12", desc: "Irish whiskey, hot coffee, cream." },
+  { name: "House Hot Sake", price: "$12", desc: "Traditional warm Junmai sake, perfect for pairing." },
+  { name: "Dassai 45 Junmai Daiginjo", price: "$28", desc: "Premium chilled sake with notes of melon and peach." },
+  { name: "Yamazaki 12yr Whisky", price: "$35", desc: "Neat or on the rocks, Japan's premier single malt." },
+  { name: "Matcha Highball", price: "$16", desc: "Japanese whisky, soda water, and a splash of ceremonial matcha." },
+  { name: "Plum Wine (Umeshu)", price: "$10", desc: "Sweet and tart Japanese plum wine served over ice." },
+  { name: "Yuzu Margarita", price: "$15", desc: "Tequila, yuzu juice, and a shichimi salt rim." },
+  { name: "Tokyo Mule", price: "$14", desc: "Vodka, fresh ginger, lime, and cucumber." },
+  { name: "Sapporo Premium Draft", price: "$8", desc: "Crisp and refreshing Japanese lager." },
+  { name: "Kyoto Old Fashioned", price: "$18", desc: "Japanese whisky, kuromitsu (black sugar), and bitters." },
+  { name: "Sakura Spritz", price: "$14", desc: "Cherry blossom liqueur, prosecco, and club soda." },
+  { name: "Lychee Martini", price: "$15", desc: "Vodka, fresh lychee puree, and vermouth." },
+  { name: "Sencha Green Tea", price: "$6", desc: "Hot, premium loose-leaf Japanese green tea." },
 ];
 
 export default function MenuPage() {
@@ -92,14 +86,14 @@ export default function MenuPage() {
   return (
     <main className="bg-luxury-black min-h-screen text-white pb-20">
       <Navbar />
-      
+
       {/* Hero Header */}
       <div className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image src="/cocktail.png" alt="Menu Header" fill className="object-cover opacity-30 grayscale" />
           <div className="absolute inset-0 bg-gradient-to-b from-luxury-black via-transparent to-luxury-black" />
         </div>
-        
+
         <div className="relative z-10 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -121,11 +115,10 @@ export default function MenuPage() {
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`px-12 py-4 font-cinzel font-bold uppercase tracking-widest transition-all duration-500 border-2 ${
-              activeTab === tab 
-              ? "bg-gold text-luxury-black border-gold shadow-[0_0_20px_rgba(212,175,55,0.4)]" 
+            className={`px-12 py-4 font-cinzel font-bold uppercase tracking-widest transition-all duration-500 border-2 ${activeTab === tab
+              ? "bg-gold text-luxury-black border-gold shadow-[0_0_20px_rgba(212,175,55,0.4)]"
               : "bg-transparent text-gold border-gold/30 hover:border-gold"
-            }`}
+              }`}
           >
             {tab}
           </button>
@@ -152,10 +145,10 @@ export default function MenuPage() {
                       <p className="text-gold tracking-widest text-xs uppercase">{cat.description}</p>
                     </div>
                   </div>
-                  
+
                   <div className="space-y-8">
                     {cat.items.map((item, i) => (
-                      <motion.div 
+                      <motion.div
                         key={i}
                         whileHover={{ x: 10 }}
                         className="group cursor-default"
@@ -166,7 +159,7 @@ export default function MenuPage() {
                         <p className="text-gray-500 text-sm italic font-poppins">{item.desc}</p>
                       </motion.div>
                     ))}
-                    
+
                     <div className="pt-8 flex space-x-6">
                       <div className="flex items-center text-gold/60 text-xs uppercase tracking-widest">
                         <Flame className="w-4 h-4 mr-2" /> Signature
@@ -205,7 +198,7 @@ export default function MenuPage() {
       </div>
 
       <footer className="mt-32 py-12 border-t border-gold/10 text-center text-gray-500 text-sm tracking-widest uppercase">
-        &copy; 2026 BlackWoods Bar & Grill | Duffii Marcos corps
+        &copy; 2026 Soochi | Kai Gill & Team
       </footer>
     </main>
   );

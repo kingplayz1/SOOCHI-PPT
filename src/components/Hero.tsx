@@ -8,12 +8,12 @@ export default function Hero() {
     <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-luxury-black/60 via-luxury-black/40 to-luxury-black z-10" />
-      
+
       {/* Background Image */}
       <div className="absolute inset-0 scale-105">
         <Image
-          src="/bar_hero.jpg"
-          alt="BlackWoods Luxury Bar"
+          src="/soochi.jpg"
+          alt="Soochi Japanese Restaurant"
           fill
           className="object-cover opacity-60"
           sizes="100vw"
@@ -28,17 +28,17 @@ export default function Hero() {
           transition={{ duration: 1 }}
         >
           <h2 className="text-gold text-lg md:text-xl tracking-[0.3em] uppercase mb-4 font-poppins font-light">
-            Premium Dining & Nightlife
+            Premier Japanese Sushi
           </h2>
           <h1 className="text-5xl md:text-8xl font-cinzel font-bold mb-8 tracking-tighter leading-none">
-            <span className="block text-white">BLACK</span>
-            <span className="block gold-gradient-text animate-gold-glow lg:animate-neon-flicker">WOODS</span>
+            <span className="block text-white">SOOCHI</span>
+            <span className="block gold-gradient-text animate-gold-glow lg:animate-neon-flicker">寿司</span>
           </h1>
           <div className="w-24 h-[2px] bg-gold mx-auto mb-8" />
           <p className="max-w-2xl mx-auto text-gray-300 text-lg md:text-xl font-light mb-12">
-            A Cinematic Business Proposal for the Future of Luxury Hospitality.
+            An Unforgettable Waterfront Dining Experience at Del Perro Pier.
           </p>
-          
+
           <motion.a
             href="#executive-summary"
             whileHover={{ scale: 1.05 }}

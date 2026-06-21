@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "BlackWoods Bar & Grill | Luxury Business Proposal",
-  description: "A premium modern dining and nightlife destination business proposal. Executive summary, operational analysis, and financial projections for BlackWoods Bar & Grill.",
-  keywords: ["BlackWoods", "Bar & Grill", "Business Proposal", "Luxury Dining", "Nightlife", "Investment"],
+  title: "Soochi | Premier Japanese Sushi Restaurant Proposal",
+  description: "A premier Japanese sushi restaurant nestled at the end of Del Perro Pier, Los Santos. Business proposal and vision.",
+  keywords: ["Soochi", "Sushi", "Japanese Restaurant", "Business Proposal", "Del Perro Pier", "Los Santos"],
 };
 
 export default function RootLayout({
