@@ -73,9 +73,9 @@ export default function Home() {
         <div className="grid md:grid-cols-4 gap-8">
           {[
             { name: "Kai Gill", role: "Owner", bio: "Phone: 999 999 9991", img: "/kai_gill.jpg" },
-            { name: "Lucifer Singh", role: "Co-Owner", bio: "Phone: 919 999 9999", img: "/Lucifer.png" },
+            { name: "Nakul Singh", role: "Co-Owner", bio: "Phone: 417 257 9460", img: "/nakul.png" },
             { name: "Shivam Gupta", role: "Head-Chef", bio: "Phone: 426 509 9510", img: "/shivam.png" },
-            { name: "Nakul Singh", role: "Management", bio: "Phone: 417 257 9460", img: "/nakul.png" },
+            { name: "Lucifer Singh", role: "Management", bio: "Phone: 919 999 9999", img: "/Lucifer.png" },
           ].map((member, i) => (
             <motion.div
               key={i}
