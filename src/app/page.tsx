@@ -48,7 +48,7 @@ export default function Home() {
             <p className="text-gray-300 text-lg leading-relaxed">
               We want this food business because we have a passion for preparing different types of cuisines. We have extensive experience in seafood dishes, which is why we are highly interested in putting forward a proposal for Soochi. We feel like it will be the perfect place to serve great-tasting seafood with exquisite Japanese-style cuisine. We believe our passion and experience will help create a unique dining experience, and we would love the opportunity to bring that vision to Soochi.
             </p>
-            <div className="grid grid-cols-2 gap-4 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 md:mt-8">
               {[
                 { icon: Utensils, label: "Fresh Sushi & Sashimi" },
                 { icon: Wine, label: "Premium Sake Bar" },
@@ -56,8 +56,8 @@ export default function Home() {
                 { icon: Trophy, label: "Omakase Experience" },
               ].map((item, i) => (
                 <div key={i} className="glass-card p-4 flex items-center space-x-3 border-l-2 border-l-gold">
-                  <item.icon className="text-gold w-5 h-5" />
-                  <span className="text-sm uppercase tracking-wider">{item.label}</span>
+                  <item.icon className="text-gold w-5 h-5 shrink-0" />
+                  <span className="text-xs md:text-sm uppercase tracking-wider">{item.label}</span>
                 </div>
               ))}
             </div>
@@ -109,12 +109,12 @@ export default function Home() {
       <Section id="location" title="The Destination" subtitle="Prime Real Estate">
         <div className="glass-card overflow-hidden">
           <div className="grid md:grid-cols-2">
-            <div className="p-12 space-y-8">
+            <div className="p-6 md:p-12 space-y-6 md:space-y-8">
               <div className="flex items-start space-x-4">
-                <MapPin className="text-gold w-6 h-6 mt-1" />
+                <MapPin className="text-gold w-6 h-6 mt-1 shrink-0" />
                 <div>
-                  <h3 className="text-2xl font-cinzel font-bold mb-2">Del Perro Pier, Los Santos</h3>
-                  <p className="text-gray-400">An unforgettable waterfront dining experience right on the shoreline.</p>
+                  <h3 className="text-xl md:text-2xl font-cinzel font-bold mb-2">Del Perro Pier, Los Santos</h3>
+                  <p className="text-gray-400 text-sm md:text-base">An unforgettable waterfront dining experience right on the shoreline.</p>
                 </div>
               </div>
               <ul className="space-y-4">
@@ -131,7 +131,7 @@ export default function Home() {
                 ))}
               </ul>
             </div>
-            <div className="h-[400px] relative">
+            <div className="h-[250px] md:h-[400px] relative">
               <Image src="/soochiexp_close.jpg" alt="Location Exterior" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
               <div className="absolute inset-0 bg-gold/5 mix-blend-overlay" />
             </div>
@@ -141,15 +141,15 @@ export default function Home() {
 
       {/* 4. Aims & Objectives / Vision */}
       <Section id="objectives" title="Vision" subtitle="Our Commitment" className="bg-luxury-gray/30">
-        <div className="glass-card p-12 border-t-4 border-t-gold text-center max-w-4xl mx-auto space-y-6">
-          <Target className="mx-auto text-gold w-12 h-12 mb-6" />
-          <p className="text-gray-300 text-lg leading-relaxed font-light">
+        <div className="glass-card p-6 md:p-12 border-t-4 border-t-gold text-center max-w-4xl mx-auto space-y-4 md:space-y-6">
+          <Target className="mx-auto text-gold w-10 h-10 md:w-12 md:h-12 mb-4 md:mb-6" />
+          <p className="text-gray-300 text-base md:text-lg leading-relaxed font-light">
             Our vision for this business is to provide good quality, hygienic seafood so that everyone can enjoy both vegetarian and non-vegetarian meals in a Japanese style.
           </p>
-          <p className="text-gray-300 text-lg leading-relaxed font-light">
+          <p className="text-gray-300 text-base md:text-lg leading-relaxed font-light">
             We would also like to focus on customer engagement so that the dining experience is more peaceful and enjoyable. Since Soochi is located on the shoreline, customers will be able to enjoy their meals with a beautiful sea view.
           </p>
-          <p className="text-gray-300 text-lg leading-relaxed font-light">
+          <p className="text-gray-300 text-base md:text-lg leading-relaxed font-light">
             We also have plans to organize events that can bring the whole city closer together. Our main focus will be on serving good-quality food at affordable prices while creating a welcoming and memorable dining experience for everyone.
           </p>
         </div>
@@ -200,7 +200,7 @@ export default function Home() {
             <div className="space-y-4">
               {[
                 "Fresh sushi & sashimi preparation with daily ingredient checks",
-                "Sake and beverage bar management & service",
+                "Sake and beverage & service",
                 "Waterfront table reservations & guest experience management",
                 "Strict seafood cold-chain and hygiene compliance",
                 "Inventory of fresh seafood, produce, and Japanese imports",
