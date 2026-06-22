@@ -50,10 +50,10 @@ export default function Home() {
             </p>
             <div className="grid grid-cols-2 gap-4 mt-8">
               {[
-                { icon: Utensils, label: "Premium Grill" },
-                { icon: Wine, label: "Signature Drinks" },
-                { icon: Music, label: "Themed Nights" },
-                { icon: Star, label: "VIP Service" },
+                { icon: Utensils, label: "Fresh Sushi & Sashimi" },
+                { icon: Wine, label: "Premium Sake Bar" },
+                { icon: Star, label: "Waterfront Sea View" },
+                { icon: Trophy, label: "Omakase Experience" },
               ].map((item, i) => (
                 <div key={i} className="glass-card p-4 flex items-center space-x-3 border-l-2 border-l-gold">
                   <item.icon className="text-gold w-5 h-5" />
