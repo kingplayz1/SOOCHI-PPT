@@ -69,7 +69,7 @@ const drinksMenu = [
   { name: "House Hot Sake", price: "$12", desc: "Traditional warm Junmai sake, perfect for pairing." },
   { name: "Dassai 45 Junmai Daiginjo", price: "$28", desc: "Premium chilled sake with notes of melon and peach." },
   { name: "Yamazaki 12yr Whisky", price: "$35", desc: "Neat or on the rocks, Japan's premier single malt." },
-  { name: "Matcha Highball", price: "$16", desc: "Japanese whisky, soda water, and a splash of ceremonial matcha." },
+  { name: "Matcha Highball", price: "$16", desc: "Japanese whisky, soda water, and a splash of ceremonial matcha. (Caffeinated)" },
   { name: "Plum Wine (Umeshu)", price: "$10", desc: "Sweet and tart Japanese plum wine served over ice." },
   { name: "Yuzu Margarita", price: "$15", desc: "Tequila, yuzu juice, and a shichimi salt rim." },
   { name: "Tokyo Mule", price: "$14", desc: "Vodka, fresh ginger, lime, and cucumber." },
@@ -77,7 +77,7 @@ const drinksMenu = [
   { name: "Kyoto Old Fashioned", price: "$18", desc: "Japanese whisky, kuromitsu (black sugar), and bitters." },
   { name: "Sakura Spritz", price: "$14", desc: "Cherry blossom liqueur, prosecco, and club soda." },
   { name: "Lychee Martini", price: "$15", desc: "Vodka, fresh lychee puree, and vermouth." },
-  { name: "Sencha Green Tea", price: "$6", desc: "Hot, premium loose-leaf Japanese green tea." },
+  { name: "Sencha Green Tea", price: "$6", desc: "Hot, premium loose-leaf Japanese green tea. (Caffeinated)" },
 ];
 
 export default function MenuPage() {
@@ -184,7 +184,6 @@ export default function MenuPage() {
                 <div key={idx} className="glass-card p-5 md:p-8 border-l-4 border-l-gold group hover:bg-gold/5 transition-all">
                   <div className="flex justify-between items-baseline mb-2 md:mb-4">
                     <h3 className="text-lg md:text-2xl font-cinzel font-bold text-white group-hover:text-gold transition-colors">{drink.name}</h3>
-                    <span className="text-gold font-bold text-sm ml-2">{drink.price}</span>
                   </div>
                   <p className="text-gray-400 text-sm leading-relaxed">{drink.desc}</p>
                   <div className="mt-3 flex items-center text-gold/30 group-hover:text-gold transition-colors">
